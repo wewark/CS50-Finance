@@ -9,6 +9,17 @@
     </RootNamespace>
     <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
     <AssemblyName>C$50 Finance</AssemblyName>
+    <SpecificPageValue>public/login.php</SpecificPageValue>
+    <StartAction>SpecificPage</StartAction>
+    <SaveServerSettingsInUserFile>false</SaveServerSettingsInUserFile>
+    <Runtime>PHP</Runtime>
+    <RuntimeVersion>7.0</RuntimeVersion>
+    <EnvName>PHPDev</EnvName>
+    <PHPDevHostName>localhost</PHPDevHostName>
+    <PHPDevAutoPort>true</PHPDevAutoPort>
+    <CustomXdebugPort>9000</CustomXdebugPort>
+    <PublishEvent>None</PublishEvent>
+    <WebRoot>public</WebRoot>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <IncludeDebugInformation>true</IncludeDebugInformation>
@@ -17,6 +28,55 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="index.php" />
+    <Compile Include="includes\config.php" />
+    <Compile Include="includes\helpers.php" />
+    <Compile Include="public\buy.php" />
+    <Compile Include="public\deposite.php" />
+    <Compile Include="public\history.php" />
+    <Compile Include="public\index.php" />
+    <Compile Include="public\login.php" />
+    <Compile Include="public\logout.php" />
+    <Compile Include="public\quote.php" />
+    <Compile Include="public\register.php" />
+    <Compile Include="public\sell.php" />
+    <Compile Include="public\settings.php" />
+    <Compile Include="views\apology.php" />
+    <Compile Include="views\buy_form.php" />
+    <Compile Include="views\deposite_form.php" />
+    <Compile Include="views\dump.php" />
+    <Compile Include="views\footer.php" />
+    <Compile Include="views\header.php" />
+    <Compile Include="views\history_form.php" />
+    <Compile Include="views\login_form.php" />
+    <Compile Include="views\portfolio.php" />
+    <Compile Include="views\quote_form.php" />
+    <Compile Include="views\quote_result.php" />
+    <Compile Include="views\register_form.php" />
+    <Compile Include="views\sell_form.php" />
+    <Compile Include="views\settings_form.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="includes\" />
+    <Folder Include="public\" />
+    <Folder Include="public\css\" />
+    <Folder Include="public\fonts\" />
+    <Folder Include="public\img\" />
+    <Folder Include="public\js\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.json" />
+    <Content Include="pset7.sql" />
+    <Content Include="public\css\bootstrap.min.css" />
+    <Content Include="public\css\styles.css" />
+    <Content Include="public\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="public\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="public\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="public\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="public\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="public\img\logo.png" />
+    <Content Include="public\js\bootstrap.min.js" />
+    <Content Include="public\js\jquery-1.11.3.min.js" />
+    <Content Include="public\js\scripts.js" />
   </ItemGroup>
 </Project>

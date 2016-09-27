@@ -1,0 +1,6 @@
+﻿CREATE TABLE [users].[Table]
+(
+	[Id] INT NOT NULL PRIMARY KEY, 
+    [username] NCHAR(10) NOT NULL, 
+    [cash] DECIMAL(18, 4) NOT NULL DEFAULT 10000.0000
+)
